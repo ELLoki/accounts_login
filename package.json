@@ -1,0 +1,21 @@
+{
+  "name": "crud_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "server": "json-server ./src/config/db.json --port=3333",
+    "start": "vite ./dist",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "vite": "^7.3.0"
+  }
+}

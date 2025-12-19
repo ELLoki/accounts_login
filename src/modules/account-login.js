@@ -8,14 +8,17 @@ export const loggin = async ({ Email, Pass }) => {
             const finaly = Email === item.account ? true : false
             if (finaly) {
                 return item
-            }
+            } 
         })
-        if (remember.checked && result) {
-            persistenceCreate(Email)
-        }
         remember.checked = false
         email.value = ''
         pass.value = ''
+        if (!result){
+                return alert('Essa conta não existe');
+            }
+        if (remember.checked && result) {
+            persistenceCreate(Email)
+        }
     } catch (error) {
         console.log(error)
         alert('Não foi possivel efetuar o login')

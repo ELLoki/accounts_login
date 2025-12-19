@@ -12,9 +12,9 @@ export const isPersistence = async () => {
                 email.value = item.account
                 pass.value = item.password
                 remember.checked = true
-                console.log(item.password)
             }
         })
+        // remoção criada apenas para testes.
         localStorage.removeItem('logged')
         return alert('Sua conta está persistente')
     }
